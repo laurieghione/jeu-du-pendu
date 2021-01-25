@@ -1,0 +1,108 @@
+* {
+  background-repeat: no-repeat;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Oswald, sans-serif;
+  height: 100vh;
+  display: flex;
+}
+
+h1 {
+  text-transform: uppercase;
+  border: 1px solid black;
+  padding: 1rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+
+.btn {
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-top: 7rem;
+  background-color: #0070ad;
+  border: none;
+  height: 6rem;
+  width: 6rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  outline: none;
+  color: white;
+  border-radius: 50%;
+  box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2),
+    0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
+}
+
+.btn:hover{
+  transition: 0.1s;
+  background-color: rgba(0, 112, 173, 0.8);
+}
+
+#button_replay {
+  visibility: hidden;
+  margin-top: 1rem;
+}
+
+#button_back{
+  visibility: hidden;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 1.9rem;
+ background-color: grey;
+ margin-top: 0;
+ height: 4rem;
+  width: 4rem;
+}
+
+#button_back:hover{
+  transition: 0.1s;
+  background-color: rgba(128, 128, 128, 0.8);
+}
+
+
+#board {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#wordToFind {
+  margin-top: 3rem;
+  letter-spacing: 1rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  text-indent: 1rem;
+  animation: 250ms infinite alternate ease-in-out;
+  transition: all 0.25s;
+
+}
+
+#errors {
+  letter-spacing: 1rem;
+}
+
+#hangman {
+  background: url(".././assets/img/Le-Pendu.png") no-repeat;
+  background-position: -33px 0;
+  width: 180px;
+  height: 150px;
+  visibility: hidden;
+  margin-top: 1rem;
+}
+
+#msg{
+  font-weight: bold;
+  font-size: 1rem;
+}
+

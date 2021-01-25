@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Le jeu du pendu</title>
+  </head>
+
+  <body>
+         
+    <main>
+      <h1>Le jeu du pendu</h1>
+        <button id="button_back" class="btn" onclick="window.location.href='index.html'" ><i class="fa fa-home"></i></button>
+      <div id="board">
+        <p id="info">Type a letter</p>
+        <p id="msg"></p>     
+        <button id="button_replay" class="btn" > Replay </button>
+        <div id="hangman"></div>
+        <p id="errors"></p>
+        <p id="wordToFind"></p>
+      </div>
+    
+      <script src="js/main.js"></script>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "files.autoSave": "onFocusChange",
+  "editor.formatOnSave": true,
+  "eslint.options": {
+    "extensions": [".js", "html"]
+  },
+  "eslint.validate": ["javascript", "html"],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "prettier.configPath": ".prettierrc.js",
+  "javascript.preferences.quoteStyle": "single"
+}
